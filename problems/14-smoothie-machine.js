@@ -23,6 +23,34 @@ console.log(smoothie2("pineapple"));
 ***********************************************************************/
 
 // Your code here 
+const smoothieMachine = (...p) => {
+  let initial = "I'm having a smoothie with";
+  let arr = initial.split(' ');
+  if (p.length>0) {
+    arr.push(p[0]);
+
+    for (let i = 1; i<p.length; i++) {
+      arr.push('and', p[i]);
+    }
+  }
+
+  return (...p1) => { 
+    if (arr[arr.length-1] === 'with' ) {
+      if (p1.length > 0) { // if (p1.length) also works
+        arr.push(p1[0]);
+        for (let i = 1; i< p1.length; i++) {
+          arr.push('and', p1[i]);
+        }
+      }
+    }
+    else {
+      for (let i = 0; i<p1.length; i++) {
+        arr.push('and', p1[i]);
+      }
+    }
+    return arr.join(' ');
+  }
+}
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 try {

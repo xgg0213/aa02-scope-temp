@@ -18,6 +18,14 @@ sandwich2("pb") // => "One sandwich with tomato and pb"
 ***********************************************************************/
 
 // Your code here 
+const sandwichMaker = () => {
+    let initial = 'One sandwich with tomato';
+    let initialArr = initial.split(' ')
+    return function(input) {
+        initialArr.push('and', input);
+        return initialArr.join(' ');
+    }
+}
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 

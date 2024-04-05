@@ -29,6 +29,19 @@ Example 4:
 ***********************************************************************/
 
 // Your code here 
+const countDownTimer = (n) => {
+  let sentence = 'Happy New Year!'
+  if (n===0) {return sentence}
+  else {
+    return count = function() {
+      if (n>1) {
+        n -= 1;
+        return count; //can return the function once a function is named
+      }
+      return sentence;
+    }
+  }
+}
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 

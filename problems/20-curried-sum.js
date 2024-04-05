@@ -44,6 +44,34 @@ AFTER YOU ARE FINISHED WITH THIS PROBLEM, ASK FOR A CODE REVIEW
 ***********************************************************************/
 
 // Your code here 
+const curriedSum = int => {
+  if (int <= 0) {
+    return null;
+  } 
+  let count = 0;
+  let sum = 0;
+  return func = n => {
+    if (n>0) {
+      count += 1;
+      sum += n;
+      if (count < int) {
+        return func;
+      } else {
+        return sum;
+      }
+    } else {
+      return null;
+    }
+  }
+}
+
+const sum = curriedSum(4); // returns a function
+console.log(sum(5)) // returns a function
+console.log(sum(20)) // returns a function
+console.log(sum(30)) // returns a function
+console.log(sum(-1)) // returns null
+console.log(sum(0)) // returns null
+console.log(sum(20)); // => returns 75
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 

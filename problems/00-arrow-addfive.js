@@ -16,6 +16,7 @@ let result3 = addFive(37); // returns 42
 ***********************************************************************/
 
 // Your code here 
+let addFive = n => 5 + n;
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {

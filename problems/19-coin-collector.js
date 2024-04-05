@@ -26,6 +26,20 @@ Example 3:
 ***********************************************************************/
 
 // Your code here 
+const coinCollector = numCoins => {
+  let count = 0;
+  let arr = [];
+  return collect = (n) => {
+    count += 1;
+    arr.push(n);
+    if (count < numCoins) {
+      return collect;
+    } else {
+      return arr;
+    }
+  }
+}
+
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 

@@ -13,6 +13,14 @@ let result3 = arrowReverseString("potato"); // returns "otatop"
 ***********************************************************************/
 
 // Your code here 
+const arrowReverseString = str => {
+  let arr = str.split('');
+  let newArr = [];
+  for (let i = arr.length-1; i >= 0; i--) {
+    newArr.push(arr[i]);
+  }
+  return newArr.join('');
+}
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 

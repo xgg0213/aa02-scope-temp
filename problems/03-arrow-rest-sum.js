@@ -12,6 +12,13 @@ arrowRestSum(0); // => 0
 ***********************************************************************/
 
 // Your code here 
+const arrowRestSum = (...p) => {
+  let sum = p[0];
+  for (let i = 1; i < p.length; i++) {
+    sum = sum + p[i];
+  }
+  return sum;
+}
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 

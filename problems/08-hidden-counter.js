@@ -16,6 +16,15 @@ hidden2(); // returns 1
 ***********************************************************************/
 
 // Your code here 
+const hiddenCounter = () => {
+  let counter = 0;
+  return function() {
+    counter += 1;
+    return counter; //if a function does not return anything, will get undefined as answer
+  }
+  
+}
+
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 

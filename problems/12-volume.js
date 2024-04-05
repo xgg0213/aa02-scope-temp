@@ -14,6 +14,20 @@ function returned by recVolume should continue to return the original volume.
 ***********************************************************************/
 
 // Your code here 
+const recVolume = height => {
+  let count = 0;
+  let dim = [height]
+  return func = (arg) => {
+    count += 1;
+    dim.push(arg)
+    if (count >= 2) {
+      return dim[0]*dim[1]*dim[2]
+    } else {
+      return func;
+    }
+  }
+}
+
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
